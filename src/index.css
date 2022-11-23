@@ -1,8 +1,13 @@
 :root{
     --radius: 0.25rem;
-      --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-      --clr-lightgrey: #c7c7c2;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --clr-lightgrey: #c7c7c2;
+    --clr-onyx:#32373B;
+    --clr-deepsSpaceSparkle:#4A5859;
+    --clr-unbleachedSilk:#F4D6CC;
+    --clr-sunray:#F4B860;
+    --clr-brickRed:#C83E4D;
 }
 body {
   margin: 0;
@@ -21,13 +26,12 @@ code {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #173753;
-  color:#6DAEDB;
-  /* display: block;
-  align-items: center; */
+  background-color: var(--clr-onyx);
+  color:var(--clr-unbleachedSilk);
 }

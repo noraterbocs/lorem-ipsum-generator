@@ -1,59 +1,205 @@
 .main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: stretch;
+    align-items:stretch;
+    gap: 20px;
     margin: 1rem 1rem 1rem 1rem;
 }
-.section-loremipsum{
+h1{
+    font-size:20px;
+    font-weight: bold;
+    color:var(--clr-brickRed);
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2rem 0.5rem 2rem 0.5rem;
+}
+.section-input-container{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--clr-deepsSpaceSparkle);
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: var(--radius);
 }
-.form-loremipsum{
-    margin: 2rem 0 2rem 0;
+
+.form {
+    display:flex;
+    justify-content: center;
+    gap: 5px;
+    margin:2rem 0 2rem 0;
 }
+
 .label-input{
     text-transform: capitalize;
     font-weight: bold;
-    margin: 1rem 0 1rem 1rem;
+    justify-content: center;
+    color: var(--clr-sunray);
 }
 .input{
-    width:30px;
-    margin: 1rem 0 1rem 1rem;
+    width:20px;
+    text-align: center;
+    font-weight: bold;
+    overflow-y: scroll;
+    background-color: var(--clr-unbleachedSilk);
+    color:var(--clr-onyx);
+}
+
+.paragraph {
+    text-align: center;
+    margin: 0 1rem 1rem 1rem;
+}
+.btn{
+    color: var(--clr-unbleachedSilk);
+    font-weight: bold;
+    font-size:smaller;
+    border-color: var(--clr-onyx);
+    background-color: var(--clr-onyx);
+    text-transform: uppercase;
+    border-radius: var(--radius);
+    cursor: pointer;
+    box-shadow: var(--dark-shadow);
+    border-style: none;
+    padding:4px 4px 4px 4px;
+}
+
+/* color generator: */
+.colors{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+.color{
+    color:black;
+    width:inherit;
+    height: 80px;
+    width: 80px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.color-value {
+    box-shadow:var(--light-shadow);
+    width:max-content;
+    font-weight: bold;
+    opacity: 0.6;
+    margin: 4px;
+}
+.color-value:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+}
+.percent-value{
+    opacity: 0.6;
+}
+.color:hover{
+    transform: scale(1.1);
+}  
+.color-light{
+    color: white;
+}
+.input-color-gen{
+    width: 60px;
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
     overflow-y: scroll;
-    background-color: #6DAEDB;
-    color:#1B4353;
+    background-color:var(--clr-unbleachedSilk);
+    color: var(--clr-onyx);
 }
-.paragraphs{
-    margin:0rem 1rem 1rem 1rem;
+.alert{
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.paragraph {
-    margin: 1rem 1rem 1rem 1rem;
-    text-align: center;
-}
-.btn{
-    color: #6DAEDB;
-    font-weight: bold;
-    border-color: #1B4353;
-    background-color: #1B4353;
-    text-transform: uppercase;
-    padding: 0.5rem;
-    border-radius: var(--radius);
-    cursor: pointer;
-    margin: 0 2rem 0 2rem;
-    box-shadow: var(--dark-shadow);
-    border-style: none;
+.icon{
+    font-size: 30px;
 }
 
 @media only screen and (min-width: 700px) {
-    .section-loremipsum {
+    .section-input-container {
+        width: 650px;
+    }
+    .main {
+        justify-content: center;
+        align-items: center;
+    }
+    .label-input{
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 20px;
+        padding:8px 8px 8px 8px;
+    }
+    .input {
+        width: 40px;
+    }
+    .form{
+        gap: 20px;
+    }
+    .color{
+        height: 150px;
+        width: 150px;
+    }
+    .percent-value {
+        font-size: 15px;
+        padding:2px 4px 2px 4px;
+    }
+    .color-value {
+        font-size: 15px;
+        padding: 2px 4px 2px 4px;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .main{
+        flex-direction: row;
+        align-items:start;
+    }
+    .section-input-container {
         width: 650px;
     }
 
+    h1 {
+        font-size: 60px;
+        margin: 2rem;
+    }
+
+    .label-input {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 8px 8px 8px 8px;
+    }
+
+    .input {
+        width: 40px;
+    }
+
+    .form {
+        gap: 20px;
+    }
+
+    .color {
+        height: 150px;
+        width: 150px;
+    }
+
+    .percent-value {
+        font-size: 15px;
+        padding: 2px 4px 2px 4px;
+    }
+
+    .color-value {
+        font-size: 15px;
+        padding: 2px 4px 2px 4px;
+    }
 }
 
